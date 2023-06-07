@@ -1,0 +1,105 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid black;   
+    padding: 1em 2em;
+    position: sticky;
+    top: 0;
+    background-color: white;
+}
+
+.hero {
+    height:800px;
+    width:650;
+    background-image: url(https://cms.dailysocial.id/wp-content/uploads/2019/06/3816aa13baa8e522f8e9bd18456b7db6_revou_logo.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border-bottom: 1px solid black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 3em;
+}
+
+.nav {
+    display: flex;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+
+.nav-item {
+    min-width: 80px;
+    text-align: center;
+    padding: 0.2em 0.1em;
+    cursor: pointer;
+}
+
+.nav-item:hover {
+    background: lightblue;
+    margin-top: -3px;
+}
+
+.nav-item {
+    border-right: 1px solid black;
+    border-left: 1px solid black;
+}
+
+.wrapper {
+    display: flex;
+    margin: 20px 30px 50px 50px;
+}
+
+.headquarters-image {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+}
+
+.headquarters-title {
+    margin: 20px 30px 50px 60px;
+  }
+
+.headquarters-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 1em;
+}
+
+
+.button {
+    Display: flex;
+    flex-direction:column;
+    padding: 0em;
+    width: 20em;
+    margin-top: 5px; 
+    margin-bottom: 10px;
+}
+
+.footer {
+    margin-top: 10px;
+    border-top: 1px solid black;
+    text-align: right;
+}
+
+.message-us {
+    display: flex;
+    justify-content: left;
+    margin: 0 4em;
+    flex-direction: column;
+}
+
+.class-output {
+    text-align: left;
+    margin-bottom: 20px;
+    border: 1px solid black;
+    padding: 50px 400px 50px 50px;
+}
+
+.container-result {
+    display: flex;
+}
+
