@@ -1,12 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  
+  <body>
+    <header class="header">
+      <img src="image/revoU Logo.png" alt="revoU Logo.png" height="30" width="30">
+      <div class="nav">
+        <div class="nav-item"><a href="#hero-section">Home</a></div>
+        <div class="nav-item"><a href="#headquarters-section">Our Profile</a></div>
+        <div class="nav-item"><a href="https://www.linkedin.com/in/satria-lim-8b2b4020b/">Linkedin</a></div>
+        <div class="nav-item"><a href="#message-us-section">Message us</a></div>
+      </div>
+    </header>
     
-</body>
+    <div id="hero-section" class="hero">
+      <h1>Hi, Welcome to Satria Website!</h1>
+      <h2>Ini adalah mini project website pertama</h2> 
+      <div class="w3-content w3-section" style="max-width:10000px">
+        <img class="mySlides" src="image/foto1.jpg" style="width:100%">
+        <img class="mySlides" src="image/foto2.jpg" style="width:100%">
+        <img class="mySlides" src="image/foto4.jpg" style="width:100%">
+      </div>
+    </div>
+
+    <script>
+      var myIndex = 0;
+      carousel();
+
+      function carousel() {
+        var slides = document.getElementsByClassName("mySlides");
+        for (var i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+
+        myIndex++;
+        if (myIndex > slides.length) {
+          myIndex = 1;
+        }
+
+        slides[myIndex - 1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+      }
+    </script>
+  
+  <div id="headquarters-section">
+    <h1 class="headquarters-title">Our Headquarters</h1>
+
+      <div class="wrapper">
+        <div class="headquarters-image-container">
+          <div class="headquarters-image" style="background-image: url('image/jakarta.jpg');"></div>
+          <p>Jakarta</p>
+        </div>
+        <div class="headquarters-image-container">
+          <div class="headquarters-image" style="background-image: url('image/bandung.jpg');"></div>
+          <p>Bandung</p>
+        </div>
+        <div class="headquarters-image-container">
+          <div class="headquarters-image" style="background-image: url('image/surabaya.jpg');"></div>
+          <p>Surabaya</p>
+        </div>
+      </div>
+    </div>
+
+   
+    <div class="container-result">
+    <div id="message-us-section" class="message-us">
+      <div class="Message-us-text"><h1>Message Us</h1></div>
+      <form id="form-input">
+        <table>
+          <tr>
+            <td>Nama</td>
+            <td>:</td>
+            <td><input id="input-nama" type="text" name="nama"></td>
+          </tr>
+          <tr>
+            <td>Tanggal Lahir</td>
+            <td>:</td>
+            <td><input id="tanggal-lahir" type="date" name="tanggal-lahir"></td>
+          </tr>
+          <tr>
+            <td>Jenis Kelamin</td>
+            <td>:</td>
+            <td>
+              <input id="radio-laki" type="radio" name="gender" value="laki-laki">Laki-Laki
+              <input id="radio-perempuan" type="radio" name="gender" value="perempuan">Perempuan
+            </td>
+            </tr>
+            <tr>
+            <td>Pesan</td>
+            <td>:</td>
+            <td>
+              <textarea id="pesan" name="pesan"></textarea>
+            
+          <div class="button">
+          <button type="submit" id="kirim">Kirim</button>
+        </td>
+          </tr>
+          </table>
+      </form>
+  </div>
+
+  <div class="class-output">
+    <p>Current Time : <span id="current-time"></span></p>
+    <p>Nama : <span id="sender-full-name"></span></p>
+    <p>Tanggal Lahir : <span id="sender-birth-date"></span></p>
+    <p>Jenis Kelamin : <span id="sender-gender"></span></p>
+    <p>Pesan : <span id="sender-messages"></span></p>
+  </div>
+
+  </div>
+
+    <footer class="footer">Created by revoU</footer>
+
+    <script src="js/script.js"></script>
+  
+  </body>
 </html>
